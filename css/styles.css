@@ -1,6 +1,9 @@
 @charset "utf-8";
 body {background-color: #ccc; overflow-y: scroll;}
-* {margin: 0; padding: 0; list-style: none; text-decoration: none; outline: none;}
+
+* {margin: 0; padding: 0; list-style: none; outline: none;}
+
+a {text-decoration: none;}
 
 /* horizantal navbar 1>2>2>2>2>2>2 Technique */
 nav {text-align: center;} 
@@ -9,6 +12,6 @@ nav li {display: inline-block; width: 120px; opacity: 0.8;}
 nav a {display: block; color: #fff; }
 nav a:hover {background-color: #000; color: #fff;}
 
-/* sub menu  */
+/* dropdown menu  */
 nav>ul>li>ul {display: none; width: inherit;}
-na
+nav>ul>li:hover>ul {display: block; position: absolute;}
