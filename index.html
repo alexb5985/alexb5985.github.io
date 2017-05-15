@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>coding is fun</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/styles.css" />
+<script src="js/jscript.js"></script>  
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+<h1>Coding is fun, isn't it ?!</h1>
+</header>
+
+<!-- NAV -->
+<nav>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="pages/blogs.html">Blogs</a></li>
+		<li><a href="pages/about.html">About</a></li>
+		<li><a href="pages/contact.html">Contact</a></li>
+	</ul>
+	<div class="responsive-menu" onclick="ToggleMenu()">&equiv;</div>
+</nav>
+
+<div class="clear"></div>
+	
+<!-- MAIN CONTENT -->
+<main>
+
+<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 5</div>
+		  <img src="img/image-1.jpg" style="width:100%">
+		  <div class="text">Caption One</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 5</div>
+		  <img src="img/image-2.jpg" style="width:100%">
+		  <div class="text">Caption Two</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 5</div>
+		  <img src="img/image-3.jpg" style="width:100%">
+		  <div class="text">Caption Three</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 5</div>
+		  <img src="img/image-4.jpg" style="width:100%">
+		  <div class="text">Caption Four</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">5 / 5</div>
+		  <img src="img/image-5.jpg" style="width:100%">
+		  <div class="text">Caption Five</div>
+		</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</main>
+
+
+<!-- ASIDE -->
+<aside>
+<p>aside</p>
+<p>aside</p>
+<p>aside</p>
+<p>aside</p>
+<p>aside</p>
+<p>aside</p>
+<p>aside</p>
+<p>aside</p>
+<p>aside</p>
+</aside>
+
+<div class="clear"></div>	
+
+<hr />
+<footer>
+<p>Fork me on <a href="github.com"><strong>Github</strong></a> | See <a href="github.com"><strong>profile</strong></a>| send <a href="mailto:alexb5985@gmail.com"><strong>E-mail !</strong></a> </p>
+</footer>
+
+<!-- Github -->
+</body>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</html>
