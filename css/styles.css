@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+@import url("contact.css");
+@import url("slideshow.css");
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+*, *::before, *::after {box-sizing: inherit;}
+
+body {width: 90%;margin: 0 auto;background-color: #ccc; overflow-y: scroll;  font-family: Georgia, Arial, sans-serif;}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display: block;}
+
+audio,canvas,progress,video {display: inline-block;vertical-align: baseline;}
+
+nav * {margin: 0; padding: 0; list-style: none;}
+	
+header {background: #00795f;width: 100%;padding: 40px 0;color: #fff;text-align: center;}
+
+a {text-decoration: none; outline: none; color: inherit;}
+
+nav {font-family: Greorgia, Arial, sans-serif; font-size: 18px;  }
+
+nav ul {background: #43a286;overflow: hidden;text-align: center;color: #fff;}
+
+nav li {display: inline-block; padding: 20px;}
+
+nav li:hover {background: #399077;}
+
+.responsive-menu{display: none;}
+
+main, aside, header, footer{margin: 0;}
+
+main {width: 70%; float: left;background: inherit;}
+
+aside {width: 28%; height: 100%; float: right;background: #888;}
+
+hr {clear: both;}
+footer { text-align: center; line-height: 2em;}
+footer a {color: #39c;}
+
+.clear {clear: both;margin: 0;}
+
+/* Extra Small */
+@media(max-width:767px){
+	body {width: 100%;}
+	nav ul {display: none;}
+	
+	nav ul li {box-sizing: border-box;width: 100%;padding: 15px;text-align: center;border-bottom: 2px solid #005c48; }
+	
+	.responsive-menu{width: 100%;background: #005c48;display: block;font-size: 48px;font-weight: bold;color: #FFF;text-align: left;padding-left: 5px;cursor: pointer;box-sizing: border-box;}
+	
+	.toggle_menu {display: block;}
+	
+	main {width: 100%; float: none;}
+
+	aside {width: 100%; float: none;}
+	
+}
+
+/* Small */
+/* @media(min-width:768px) and (max-width:991px){
+	body {width: 90%; margin: 0 auto;}
+} */
+
+/* Medium */
+/* @media(min-width:992px) and (max-width:1199px){
+	body {width: 90%; margin: 0 auto;}
+} */
+
+/* Large */
+/* @media(min-width:1200px){
+	body {width: 90%; margin: 0 auto;}
+} */
+
+
+
+
+
+
+/* Github */
